@@ -53,7 +53,7 @@
 #define Y_MAX_PIN                             15
 #define Z_MIN_PIN                             12
 #ifndef Z_MAX_PIN
-  #define Z_MAX_PIN                            9
+  #define Z_MAX_PIN                            2
 #endif
 
 #ifndef FIL_RUNOUT_PIN
@@ -64,7 +64,7 @@
 // Z Probe (when not Z_MIN_PIN)
 //
 #ifndef Z_MIN_PROBE_PIN
-  #define Z_MIN_PROBE_PIN                      9  // Servos pin
+  #define Z_MIN_PROBE_PIN                      -1  // Servos pin
 #endif
 
 //
@@ -91,18 +91,18 @@
   #define Z_CS_PIN                            74
 #endif
 
-#define E0_STEP_PIN                           26
-#define E0_DIR_PIN                            28
-#define E0_ENABLE_PIN                         24
-#ifndef E0_CS_PIN
-  #define E0_CS_PIN                           47
+#define E1_STEP_PIN        26
+#define E1_DIR_PIN         28
+#define E1_ENABLE_PIN      24
+#ifndef E1_CS_PIN
+  #define E1_CS_PIN        47
 #endif
 
-#define E1_STEP_PIN                           36
-#define E1_DIR_PIN                            34
-#define E1_ENABLE_PIN                         30
-#ifndef E1_CS_PIN
-  #define E1_CS_PIN                           32
+#define E0_STEP_PIN        36
+#define E0_DIR_PIN         34
+#define E0_ENABLE_PIN      30
+#ifndef E0_CS_PIN
+  #define E0_CS_PIN        32
 #endif
 
 #define E2_STEP_PIN                           59
